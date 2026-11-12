@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contatti</title>
 </head>
 <body>
+	<p>
+		<h2>Contattami!</h2>
 	<form action="">
 		<div>
-			<input type="email" name="Inserisci la tua email">			
+			<label for="email">Inserisci la tua mail:</label>
+			<input type="email" name="email">
 		</div>
-		
+		<div>
+			<label for="corpo">Inserisci il corpo della tua mail</label>
+			<input type="text" name="corpo">		
+		</div>
+		<div>
+			<label for="dati">Spunta per accettare il <a href="https://it.wikipedia.org/wiki/Hydrochoerus_hydrochaeris">trattamento dei dati personali</a></label>
+			<input type="checkbox" name="dati" required>
+		</div>
+		<div>
+			<button type="submit" name="submit">Invia</button>
+		</div>
 	</form>
+</p>
 </body>
 </html>
